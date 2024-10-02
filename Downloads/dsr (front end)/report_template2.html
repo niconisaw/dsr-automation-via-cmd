@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Status Report - September</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 95%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #0000FF;
+        }
+        header p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .section-title {
+            font-weight: bold;
+            background-color: #dae8fc;
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-left: 5px solid #6c8ebf;
+            color: #333;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-family: "Arial", sans-serif;
+        }
+        th {
+            background-color: #f1f1f1;
+            font-weight: bold;
+            text-align: center;
+        }
+        .dynamic-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .dynamic-table td {
+            background-color: #f9f9f9;
+        }
+        .footer {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .highlight {
+            color: green;
+            font-weight: bold;
+        }
+        .highlight-orange {
+            background-color: #f4a460;
+        }
+        .highlight-blue {
+            background-color: #87CEEB;
+        }
+        .mid-align {
+            text-align: center;
+        }
+        .inv {
+            border: 1px solid #fff;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            table, th, td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Daily Status Report – September</h1>
+            <p>September 20, 2024</p>
+            <p>Usage Rights Reporting Team</p>
+            <p>0 - Access request received</p>
+        </header>
+
+        <!-- List of Incidents Section -->
+        <section>
+            <div class="section-title">LIST OF INCIDENTS</div>
+            <table aria-label="List of Incidents">
+                <thead>
+                    <tr>
+                        <th>Ticket</th>
+                        <th>Requestor</th>
+                        <th>Current Queue</th>
+                        <th>Status</th>
+                        <th>Creation Date</th>
+                        <th>Estimated Resolution Date</th>
+                        <th># Days Open</th>
+                        <th>Help Needed?</th>
+                    </tr>
+                </thead>
+                <tbody class="dynamic-table">
+                    <tr>
+                        <td>No ticket</td>
+                        <td>NA</td>
+                        <td>NA</td>
+                        <td>---</td>
+                        <td>MMM-DD-YYYY</td>
+                        <td>-</td>
+                        <td>0d</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resolution Steps</th>
+                    </tr>
+                </thead>
+                <tbody class="dynamic-table">
+                    <tr>
+                        <td>NA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Reports Section -->
+        <section>
+            <p class="highlight">[2 out of 2] Data Models have refreshed.</p>
+            <p>Updated Screenshot of Status:</p>
+            <table aria-label="Reports">
+                <thead>
+                    <tr>
+                        <th>Reports</th>
+                        <th>AAS Model</th>
+                        <th>ADF Pipeline</th>
+                        <th>Status</th>
+                        <th>Last Refresh Date</th>
+                        <th>Refresh Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>All Usage Rights</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>BU Scorecard - Usage Rights</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Predictive Quality Report</td>
+                        <td class="highlight-orange">BSx_Prod</td>
+                        <td>ADF refresh BSx_PROD</td>
+                        <td>OK</td>
+                        <td>20.09.2024</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Usage Rights for Initiatives</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Usage Rights tagging inspection tool</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Online Risk Report</td>
+                        <td class="highlight-blue">BSx_UR_WebpagesExclusion</td>
+                        <td>ADF refresh BSx_WebpagesExclusion</td>
+                        <td>OK</td>
+                        <td>20.09.2024</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>URL exclusions list & To be decided</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- List of Requests Section -->
+        <section>
+            <div class="section-title">LIST OF REQUESTS</div>
+            <table aria-label="List of Requests">
+                <thead>
+                    <tr>
+                        <th>Ticket</th>
+                        <th>Requestor</th>
+                        <th>Status</th>
+                        <th>Creation Date</th>
+                        <th>Action Steps Done</th>
+                        <th>Help Needed?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#">RITM6180920</a> LA (TBS): BrandStore Ad-hoc Reporting Request</td>
+                        <td>Yeimy Rodriguez</td>
+                        <td>Work in Progress</td>
+                        <td>SEPT-17-2024</td>
+                        <td>
+                            <ul>
+                                <li>Generated the report, provided a sample report, however some columns are still missing, will try again to generate a new report for the first report requested</li>
+                                <li>Still working on the report</li>
+                                <li>Provided the extracted report for profiles, report generated from Databricks UR 2.0, still working on the second report</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">RITM6180897</a> LA (TBS): BrandStore Ad-hoc Reporting Request</td>
+                        <td>Luis Perez</td>
+                        <td>Work in Progress</td>
+                        <td>SEPT-17-2024</td>
+                        <td>
+                            <ul>
+                                <li>Checked the email attachment to this request.</li>
+                                <li>As per understanding, Luis is expecting a logic explanation as to how the column values he mentioned were derived.</li>
+                                <li>Will further check it with the dev team as to how the column values were derived.</li>
+                                <li>Will wait until Monday after the pipeline run to compare if there is still a mismatch of data, also asked the eContent team for an example to compare the data to the said report.</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Pending Decisions Section -->
+        <section>
+            <div class="section-title">PENDING DAILY DECISIONS</div>
+            <table>
+                <tr>
+                    <td>N/A</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Details Section -->
+        <footer>
+            <div class="section-title">CONTACT DETAILS</div>
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <p class="mid-align">BrandStore Reporting Ops Team</p>
+                            <p class="mid-align">Email: <a href="mailto:brandstorereporting@lingaroservices.com">brandstorereporting@lingaroservices.com</a></p>
+                            <p class="mid-align">Support Availability: Monday – Friday | 9AM – 5PM CET</p>
+                            <p class="mid-align">ServiceNow Workgroup: Lingaro_Brandstore_Reporting</p>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+</body>
+</html>
